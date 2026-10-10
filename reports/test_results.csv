@@ -1,0 +1,13 @@
+Test_ID,Category,Result,Notes
+TC-001,Nominal,PASS,Deploy from RETRACTED
+TC-002,Nominal,PASS,Retract from DEPLOYED
+TC-003,Nominal,PASS,Deploy sequence reaches DEPLOYED
+TC-004,Boundary,PASS,Deploy requested while already DEPLOYED
+TC-005,Boundary,PASS,Retract requested while already RETRACTED
+TC-006,Boundary,PASS,Deploy requested while restraint MOVING
+TC-007,Boundary,PASS,Retract requested while restraint MOVING
+TC-008,Fault,PASS,Sensor fault prevents DEPLOY
+TC-009,Fault,PASS,Actuator fault prevents DEPLOY
+TC-010,Fault,PASS,Loss of power prevents DEPLOY
+TC-011,Fault,PASS,Unknown sensor position prevents movement
+TC-012,Fault,PASS,Loss of power prevents RETRACT
