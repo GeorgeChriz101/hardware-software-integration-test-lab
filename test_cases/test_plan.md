@@ -52,3 +52,75 @@ Planned examples:
 When the controller cannot confidently determine that movement is safe, the expected actuator command should be:
 
 STOP
+
+---
+
+## Phase 2 Integration Check
+
+The initial hardware/software component integration was manually verified.
+
+### Nominal Check
+
+Starting Position:
+
+RETRACTED
+
+Command:
+
+DEPLOY
+
+Expected Actuator Command:
+
+EXTEND
+
+Observed:
+
+EXTEND
+
+Result:
+
+PASS
+
+### Return Check
+
+Starting Position:
+
+DEPLOYED
+
+Command:
+
+RETRACT
+
+Expected Actuator Command:
+
+RETRACT
+
+Observed:
+
+RETRACT
+
+Result:
+
+PASS
+
+### Sensor Fault Check
+
+Condition:
+
+Position Sensor FAULT
+
+Command:
+
+DEPLOY
+
+Expected Actuator Command:
+
+STOP
+
+Observed:
+
+STOP
+
+Result:
+
+PASS
